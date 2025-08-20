@@ -38,6 +38,9 @@ USER nlweb
 # Copy application code
 COPY code/ /app/
 COPY static/ /app/static/
+copy static /static
+COPY config /app/config
+copy config /config
 
 # Copy installed packages from builder stage
 COPY --from=builder /usr/local/lib/python3.13/site-packages /usr/local/lib/python3.13/site-packages

@@ -1,5 +1,6 @@
 services:
   nlweb:
+    image: 000784706233.dkr.ecr.us-west-2.amazonaws.com/califloors/nlweb
     build:
       context: .
       dockerfile: Dockerfile
